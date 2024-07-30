@@ -30,6 +30,6 @@ public class CountryService {
                         .build(countryName))
                 .retrieve()
                 .bodyToFlux(Country.class)
-                .next(); // Obtiene el primer país si está presente
+                .next();
     }
 }

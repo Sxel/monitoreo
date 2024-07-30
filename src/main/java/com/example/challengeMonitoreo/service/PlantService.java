@@ -35,7 +35,6 @@ public class PlantService {
                     dto.setMediumAlerts(plant.getMediumAlerts());
                     dto.setRedAlerts(plant.getRedAlerts());
 
-                    // Obtener el país y la bandera
                     Country country = countryService.getCountryByName(plant.getCountry()).block();
                     System.out.println("Country: " + country);
                     if (country != null) {
