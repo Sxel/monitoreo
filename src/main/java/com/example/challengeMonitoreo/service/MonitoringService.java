@@ -24,7 +24,7 @@ public class MonitoringService {
         return plantRepository.findAll().stream()
                 .mapToInt(Plant::getMediumAlerts)
                 .sum();
-    }add
+    }
 
     public int getTotalRedAlerts() {
         return plantRepository.findAll().stream()
